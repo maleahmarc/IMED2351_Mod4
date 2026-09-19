@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 4 Kaitlyn Marcatante</title>
+  </head>
+  <body>
+    <h2>Are you a fellow collector?</h2>
+
+    <label for="userName">Name:</label>
+    <input
+      type="text"
+      id="userName"
+      placeholder="e.g., Sophia"
+      autocomplete="name"
+    />
+
+    <label for="userAge">Age:</label>
+    <input
+      type="number"
+      id="userAge"
+      placeholder="e.g., 25"
+      autocomplete="bday"
+    />
+
+    <label for="userStatus">If you collect:</label>
+    <select id="userStatus">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+      <option value="Sometimes">Sometimes</option>
+    </select>
+
+    <label for="userMedia">Is your collection physical media:</label>
+    <select id="userMedia">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="userCollection">What you collect:</label>
+    <input
+      type="text"
+      id="userCollection"
+      placeholder="trading cards"
+      autocomplete="collection"
+    />
+
+    <button onclick="generateMessage()">Click Me!</button>
+
+    <div id="output"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
