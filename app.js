@@ -49,6 +49,7 @@ function generateMessage() {
     default:
       message += " ";
   }
+  message += "<br><br>You collect: " + userCollection + ".";
 
   document.getElementById("output").innerHTML = message;
 }
